@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "56613860206",
+    "project_id": "fast-tensor-362106",
+    "storage_bucket": "fast-tensor-362106.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56613860206:android:bf808d4aa6f5339d17c77f",
+        "android_client_info": {
+          "package_name": "com.example.google_doc_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56613860206-67of9pc4sifajuavuapkpqkhbss20lj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwUz0huok268pvoApcucU2RfsfR8I9QlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56613860206-67of9pc4sifajuavuapkpqkhbss20lj7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "56613860206-4is1dpp8upnke4ui4tdpuvb9bsplodoh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.googleDocClone"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
