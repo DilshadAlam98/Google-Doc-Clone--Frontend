@@ -10,19 +10,19 @@ class LoginScreen extends ConsumerWidget {
 
   void singInGoogle(WidgetRef ref, BuildContext context) async {
     final errorModel = await ref.read(authRepoProvider).singInUser();
-    final sMessanger = ScaffoldMessenger.of(context);
+    final sMessenger = ScaffoldMessenger.of(context);
     final nav = Navigator.of(context);
-    if (errorModel == null) {
+    if (errorModel.error == null) {
       ref.read(userRepository.notifier).update((state) => errorModel.data);
       nav.push(
         MaterialPageRoute(
-          builder: (context) => HomeScreen(),
+          builder: (context) => const HomeScreen(),
         ),
       );
     } else {
-      sMessanger.showSnackBar(
+      sMessenger.showSnackBar(
         SnackBar(
-          content: Text(errorModel.error),
+          content: Text(errorModel.error!),
         ),
       );
     }

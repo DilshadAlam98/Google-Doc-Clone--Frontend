@@ -27,17 +27,18 @@ class UserModel {
 
   factory UserModel.fromMap(Map<String, dynamic> map) {
     return UserModel(
-      name: map['name'] as String,
-      email: map['email'] as String,
-      uid: map['_id'] as String,
-      token: map['token'] as String,
-      profilePic: map['profilePic'] as String,
+      name: map['name'] ?? "",
+      email: map['email'] ?? "",
+      uid: map['_id'] ?? "",
+      token: map['token'] ?? "",
+      profilePic: map['profilePic'] ?? "",
     );
   }
 
   String toJson() => json.encode(toMap());
 
-  factory UserModel.fromJson(String source) => UserModel.fromMap(json.decode(source) as Map<String, dynamic>);
+  factory UserModel.fromJson(String source) =>
+      UserModel.fromMap(json.decode(source) as Map<String, dynamic>);
 
   UserModel copyWith({
     String? name,
