@@ -11,4 +11,11 @@ class LocalStorage {
     final token = await _preferences.getString("x-auth-token");
     return token;
   }
+
+
+  Future<void> clearPref() async {
+    final _preferences = RxSharedPreferences.getInstance();
+    return await _preferences.clear();
+  }
+
 }

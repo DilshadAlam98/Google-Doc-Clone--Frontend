@@ -107,4 +107,9 @@ class AuthRepository {
     }
     return errorModel;
   }
+
+  void signOut() {
+    _googleSignIn.signOut();
+    _localStorage.clearPref();
+  }
 }

@@ -26,7 +26,6 @@ class _MyAppState extends ConsumerState<MyApp> {
 
   void getUserData() async {
     errorModel = await ref.read(authRepoProvider).getUserData();
-
     if (errorModel != null && errorModel!.data != null) {
       ref.read(userRepository.notifier).update((state) => errorModel!.data);
     }
